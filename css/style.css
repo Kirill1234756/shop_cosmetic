@@ -1,7 +1,11 @@
-name{
+.name{
     color: darkblue;
 }
 
-about{
+.about{
     color: darkblue;
+position: relative;
+top: 15px ;
+left: 350px ;
+
 }
