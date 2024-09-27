@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+:root {
+    --br: 1rem;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0.5rem;
+}
+
+.bg-orang {
+  background-color: orangered;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.t-orang {
+  color: orangered;
+}
+
+.t-green {
+  color: green;
+}
+
+
+.optimization-img {
+  background-size: cover;
+  background-position: center;
+}
+

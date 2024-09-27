@@ -1,0 +1,37 @@
+/* for whom */
+.for-whom_img {
+    width: 60%;
+    height: 60%;
+    background-image: url(../img/for_whom.jpg);
+}
+
+/* gallery */
+.img-gallery {
+    width: 10%;
+    height: 250px;
+    border-radius: var(--br);
+    background-image: url(../img/gallery/65849405.jpg);
+    background-size: cover;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+.img-gallery_1 {
+    background-image: url(../img/gallery/931424255d845af1ea332f8e510e3824.jpg);
+}
+
+.active {
+    width: 30%;
+}
+
+
+/* email */
+.email_block {
+    width: 60%;
+    background: white;
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+}

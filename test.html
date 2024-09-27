@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+<title>Image Gallery</title>
+<style>
+    .active {
+        width: 300px;
+    }
+
+    .img-gallery {
+        width: 100px;
+        height: 200px;
+        margin: 10px;
+        border: 1px solid #000;
+    }
+</style>
+</head>
+<body>
+    <div class="row">
+        <div class="img-gallery img-gallery_1 active"></div>
+        <div class="img-gallery img-gallery_2"></div>
+        <div class="img-gallery img-gallery_3"></div>
+        <!-- <div class="img-gallery img-gallery_4"></div>
+        <div class="img-gallery img-gallery_5"></div>
+        <div class="img-gallery img-gallery_6"></div>
+        <div class="img-gallery img-gallery_7"></div> -->
+    </div>
+    <script>
+        document.querySelectorAll(".img-gallery").forEach((img) => {
+            img.onclick = () => {
+                let imgActive = document.querySelector(".active");
+                imgActive.classList.remove("active");
+                img.classList.add("active");
+            }
+        });
+    </script>
+</body>
+</html>

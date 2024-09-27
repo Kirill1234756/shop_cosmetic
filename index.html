@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
 </head>
+
 <body>
-    
 
-    <div class="container">
-        <div class="row">
-            <div class="col-4 border border-dark rounded ">
-                <img src="https://static.tildacdn.com/stor6364-6537-4464-b233-666561346263/65849405.jpg" alt="" class="img-fluid rounded">
-            </div>
-            <div class="col-8 border border-dark rounded">
-                <div class="accordion accordion-flush" id="accordionFlushExample"></div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-    </div>
-  </div>
-</div>
-            </div>
+  <!-- for whom -->
+  <section class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="flex justify-content-center align-items-center border border-1 rounded-3 bg-orang for-whom_img">
         </div>
+      </div>
+      <div class="col-6"></div>
     </div>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="main.js"></script>
+  </section>
 
+  <!-- gallery -->
+  <section class="container">
+    <div class="row">
+      <div class="col-6 position-relative">
+        <div
+          class="d-flex align-items-center bg-green rounded-3 px-4 py-2 position-absolute top-50 start-0 translate-middle">
+          <p class="text-sm text-white">галерея</p>
+        </div>
+      </div>
+      <div class="col-6">
+        <h1 class="text-md t-green"> <span class="t-orang">чайная</span> церимония</h1>
+
+        <p class="text-sm t-green">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vero molestiae
+          reprehenderit dolor placeat, hic aut totam, fuga quasi corporis ipsam? Consectetur similique possimus facere
+          repellendus deleniti aperiam velit tempore.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center gap-3">
+      <div class="img-gallery img-gallery_1"></div>
+      <div class="img-gallery img-gallery_2"></div>
+      <div class="img-gallery img-gallery_3"></div>
+      <div class="img-gallery img-gallery_4 active"></div>
+      <div class="img-gallery img-gallery_5"></div>
+      <div class="img-gallery img-gallery_6"></div>
+      <div class="img-gallery img-gallery_7"></div>
+    </div>
+  </section>
+
+  <!-- email -->
+  <section style="height: 100vh; background-image: url(/img/gallery/65849405.jpg);"
+    class="container position-relative p-10 optimization-img">
+    <div class="row email_block position-absolute rounded-3 justify-content-center align-items-center p-4">
+      <div style="font-size: 2rem;" class="col-10 text-center t-green text-lg">Забранируй <span
+          class="t-orang">столик</span>. Мы свяжемся с вами
+        через <span class="t-orang">30 минут</span>.</div>
+      <div class="col-8 flex">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingName" placeholder="Name">
+          <label for="floatingPassword">name</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="floatingPassword" placeholder="Telephone">
+          <label for="floatingPassword">telephone</label>
+        </div>
+        <div class="col-8 mt-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Согласие на обработку персональных данных
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-8 flex justify-content-center alin-items-center"><button
+          class="btn btn-success rounded-3 w-100 py-3">Забранируй</button></div>
+    </div>
+  </section>
+
+
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
